@@ -1,0 +1,57 @@
+
+#main_div{
+    display: flex;
+}
+#left-div{
+    width: 20rem;
+    height: 23em;
+    border: 2px solid black;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5rem;
+    background-color: rgb(188, 188, 188);
+    line-height: 2rem;
+}
+#addbutton{
+    background-color: purple;
+    color: white;
+    border-style: none;
+    padding: 7px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#text-color{
+    cursor: pointer;
+    
+}
+#right-div{
+    width: 70rem;
+    border: 2px solid pink;   
+    height: 70vh; 
+    padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.addedNotes{
+    border: 1px solid red;
+    width: 15.2rem;
+    height: 15rem;
+    border-radius: 2px;
+    border-radius: 0.5rem;
+}
+.material-symbols-outlined{
+    float: inline-end;
+    
+}
+.title-bg-color{
+    /* background-color: grey; */
+
+}
+input{
+    border-style: none;
+
+}
+.yellow-icon {
+    color: yellowgreen;
+  }
+  
