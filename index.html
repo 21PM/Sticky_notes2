@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-<body>
-    <h1>Sticky Notes</h1>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: center">STICKY NOTES PROJECT</h1>
     <div id="main_div">
-    <div id="left-div">
-    <input type="text" placeholder="Title" id="title">
-    <!-- <input type="color"> -->
+      <div id="left-div">
+        <input type="text" placeholder="Title" id="title" />
+        <!-- <input type="color"> -->
 
-    <textarea cols="30" rows="19" id="text" placeholder="Enter your Notes"></textarea>
-    <input type="color" id="text-color">
-    <input type="button" value="Add Notes" id="addbutton">
-</div>
+        <textarea
+          cols="30"
+          rows="19"
+          id="text"
+          placeholder="Enter your Notes"
+        ></textarea>
+        <input type="color" id="text-color" value="#FFF300"/>
+        <input type="button" value="Add Notes" id="addbutton" />
+      </div>
 
-    <div id="right-div">
-            <div class="addedNotes">
-                <span class="material-symbols-outlined">
-                    close
-                </span>
-                <span class="material-symbols-outlined">
-                        edit
-                </span>
-                <span class="material-symbols-outlined yellow-icon">task_alt</span>
+      <div id="right-div">
+        <!-- <div class="addedNotes"> -->
+          <!-- <span class="material-symbols-outlined"> close </span>
+          <span class="material-symbols-outlined"> edit </span>
+          <span class="material-symbols-outlined yellow-icon">task_alt</span>
 
-                <h2 class="title-bg-color">Title</h2>
-                <textarea cols=
-        "30" rows="11" id="text" enable placeholder="Enter your Notes" id="text_area">${Notes_text.value}</textarea>
-               
-
-            </div>
+          <h2 class="title-bg-color">Title</h2>
+          <textarea
+            cols="30"
+            rows="11"
+            id="text"
+            enable
+            placeholder="Enter your Notes"
+            id="text_area"
+          >
+${Notes_text.value}</textarea
+          >
+        </div> -->
+      </div>
     </div>
-
-</div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

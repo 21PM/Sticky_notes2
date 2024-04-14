@@ -5,13 +5,39 @@
 #left-div{
     width: 20rem;
     height: 23em;
-    border: 2px solid black;
+    border: 1px solid black;
     align-items: center;
     padding: 10px;
     margin-top: 5rem;
     background-color: rgb(188, 188, 188);
     line-height: 2rem;
+    border-radius: 0.5rem;
 }
+#left-div {
+    /* Existing styles... */
+    background: linear-gradient(to bottom, #f2f2f2 0%, #e0e0e0 100%); /* Light gray to lighter gray gradient */
+}
+@media (max-width: 768px) {
+    #left-div {
+      width: 80%; /* Adjust width for smaller screens */
+    }
+}
+#left-div::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Adjust height for shadow size */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); /* Shadow effect */
+}
+
+  
+#addbutton:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    cursor: pointer; /* Emphasize clickable action */
+}
+  
 #addbutton{
     background-color: purple;
     color: white;
@@ -26,26 +52,34 @@
 }
 #right-div{
     width: 70rem;
-    border: 2px solid pink;   
+    /* border: 2px solid pink;    */
     height: 70vh; 
-    padding: 0 1rem;
+    padding: 0 3.5rem;
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 .addedNotes{
-    border: 1px solid red;
-    width: 15.2rem;
-    height: 15rem;
+    /* border: 1px solid red; */
+    width: 15.1rem;
+    height: 14.9rem;
     border-radius: 2px;
     border-radius: 0.5rem;
 }
+.addedNotes {
+    /* Existing styles... */
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 .material-symbols-outlined{
     float: inline-end;
+    cursor: pointer;
     
-}
-.title-bg-color{
-    /* background-color: grey; */
-
 }
 input{
     border-style: none;

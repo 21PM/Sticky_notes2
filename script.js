@@ -28,10 +28,10 @@ addbtn.addEventListener('click', ()=>{
         <span class="material-symbols-outlined" id="edit">
             edit
         </span>
-        <span class="material-symbols-outlined" id="save-btn" style="display: none" >
+        <span class="material-symbols-outlined  yellow-icon" id="save-btn" style="display: none" >
         task_alt
         </span>
-        <h2 class="title-bg-color">${title_text.value}</h2>
+        <h2 class="title-bg-color" style="text-align: center;">${title_text.value}</h2>
         <textarea cols=
         "30" rows="11" disabled placeholder="Enter your Notes" id="text_area">${Notes_text.value}</textarea>
         
@@ -50,31 +50,33 @@ addbtn.addEventListener('click', ()=>{
         NewDiv.addEventListener('click',(e)=>{
             console.log(e);
 
-            if(e.target.id === "edit"){
-                const editIcon = e.target.id;
-                console.log(e.firstChild.id);
+            if(e.target.id === "close"){
+                const closeIcon = e.target.id;
+                NewDiv.remove();
+
+            }
+            else if (e.target.id === "edit"){
+
+                let edit_text = NewDiv.lastChild.previousSibling;
+                edit_text.disabled = false;
+                let save_BTN =  edit_text.parentElement.lastElementChild.previousElementSibling.previousElementSibling;
+                save_BTN.style.display = "block";
+                let edit_BTN =  save_BTN.previousElementSibling;
+                edit_BTN.style.display = "none";
+
+                
+                save_BTN.addEventListener('click',()=>{
+                    save_BTN.style.display = "none";
+                    edit_BTN.style.display = "block";
+                    edit_text.disabled = true;
+                })
                 
 
+                
             }
         })
 
 
-        // edit_icon.addEventListener('click',()=>{
-        //     new_text_area.disabled = false;
-        //     save_btn.style.display = "block";
-        //     edit_icon.style.display = "none";
-
-        //     save_btn.addEventListener('click',()=>{
-        //         save_btn.style.display = "none";
-        //     edit_icon.style.display = "block";
-        //     new_text_area.disabled = true;
-
-
-        //     })
-            
-        // })
-
-    
-
-
 })
+
+
